@@ -3,7 +3,6 @@ import './App.scss'
 import ActivityCalendar from './components/ActivityCalendar';
 import ActivityPanel from './components/ActivityPanel';
 
-// Пример использования компонента ActivityCalendar
 function App() {
   const [activityData, setActivityData] = useState({});
 
@@ -16,7 +15,6 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        // Установка полученных данных в состояние
         setActivityData(data);
       })
       .catch((error) => {
